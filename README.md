@@ -30,7 +30,7 @@ do
 done
 ``
 With that done we can now plot the results. To do this we will need the following R script:
-``
+
 setwd("~/projects/SACP/WGS_BovHD_Subset/popgen/treemix/output")
 library(RColorBrewer)
 library(R.utils)
@@ -48,4 +48,4 @@ for(edge in 0:5){
   plot_resid(stem=paste0(prefix,".",edge),pop_order="popmap.txt")
 }
 dev.off()
-``
+
